@@ -25,10 +25,10 @@
 <launch>
     <!-- Select the robot -->
     <arg name="robot_name" default="iiwa"/>
-    <arg name="model" default="14" />
+    <arg name="model" default="7" />
 
     <!-- Select the controller -->
-    <arg name="controller" default="TorqueController"/>
+    <arg name="controller" default="PositionController"/>
 
     <!-- Select the hardware interface -->
     <arg if="$(eval controller == 'TorqueController')" name="hardware_interface" value="EffortJointInterface"/>
